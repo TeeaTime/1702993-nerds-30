@@ -1,0 +1,87 @@
+@font-face{
+  font-family: "Roboto" ;
+  src: url(fonts/roboto.woff2);
+}
+body{
+  font-family: "Roboto" ;
+}
+.nav-menu{
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+
+}
+.h3-site{
+  font-size: 55px;
+  margin: 0;
+}
+.header{
+  background-color: #EEEEEE;
+}
+.shop{
+  background-color: #EEEEEE;
+}
+
+.site-button{
+  text-decoration: none;
+  color: white;
+  background-color: #FB565A;
+}
+.site-button:hover {
+     background-color: #E74246;
+}
+.site-button:focus{
+    color: rgb(255, 255, 255, 0.3);
+    background-color: #D7373B;
+}
+.button-order{
+  text-decoration: none;
+  color: white;
+}
+.one{
+  background-color: #FB565A;
+}
+.two{
+  background-color: #00CA74;
+}
+.two:hover{
+  background-color: #00BC6C;
+}
+.two:focus{
+  background-color: #00AA62;
+}
+.three{
+  background-color: #EFC849;
+}
+.three:hover{
+  background-color: #EAB534;
+}
+.three:focus{
+  background-color: #E5A722;
+}
+.ul-main-menu{
+
+}
+.form:focus{
+  color: #444444;
+}
+.sites{
+  opacity: 0.2;
+}
+.sites:hover{
+    opacity: 1;
+}
+.menu{
+  list-style-type: none;
+}
+.contact{
+   color: #666666;
+   text-decoration: none;
+}
+.social-networks{
+  opacity: 1;
+}
+
+

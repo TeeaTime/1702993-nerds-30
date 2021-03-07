@@ -3,90 +3,95 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
-        <header>
-         <a href="">
-          <img src="img/nerds-logo.svg" alt="">
-         </a>
-         <nav>
-        <ul>
-         <li><a href=""> Студия </a></li>
-         <li><a href=""> Клиенты </a></li>
-         <li><a href=""> Магазин </a></li>
-         <li><a href=""> Контакты </a></li>
+    <header class="header">
+
+      <a href="" class="nav-logo">
+        <img src="img/nerds-logo.svg" alt="Логотип">
+       </a>
+
+         <nav class="nav">
+        <ul class="nav-menu menu">
+         <li><a href="" class="nav-menu"> Студия </a></li>
+         <li><a href="" class="nav-menu"> Клиенты </a></li>
+         <li><a href="" class="nav-menu"> Магазин </a></li>
+         <li><a href="" class="nav-menu"> Контакты </a></li>
         </ul>
          </nav>
-         <a href="">
-          <img src="img/cart-icon.svg" alt="">
-          Корзина
+         <a href="" class="nav-menu menu">
+          <img src="img/cart-icon.svg" alt="Корзина">
+          КОРЗИНА
          </a>
         </header>
         <main>
-         <section>
-          <div>
-            Долго, дорого, скурпулезно.
-           <p>
-            Математически выверенный дизайн для вашего сайта или мобильного приложения.   
+         <section class="shop">
+          <div class="site-discription">
+            <h3 class="h3-site">
+             Долго, дорого, скурпулезно.
+            </h3>
+           <p class="site-about">
+            Математически выверенный дизайн для вашего сайта или мобильного приложения.
            </p>
-           <a href="">
+           <a href="#" class="site-button">
                УЗНАТЬ БОЛЬШЕ
            </a>
-           <img src="img/nerds-index-slide11.png" alt="">
+           <img src="img/nerds-index-slide11.png" class="main-slide" alt="Первый слайд">
           </div>
          </section>
-         <section>
-          <ul>
+         <section class="main-menu">
+          <ul class="ul-main-menu menu">
            <li>
-            <img src="img/illustration-11.jpg" alt="">
-            <h2>
+            <img src="img/notebook.svg" class="menu-img" alt="Ноутбук">
+            <h2 class="h2-menu">
              ВЕБ-САЙТЫ
             </h2>
-            <p>
-                Мир никогда не будет прежним после того как увидит ваш сайт!   
+            <p class="about-menu">
+                Мир никогда не будет прежним после того как увидит ваш сайт!
             </p>
-            <button>
+            <a href="#" class="site-button button-order one">
                 ЗАКАЗАТЬ
-            </button>
+            </a>
            </li>
            <li>
-            <img src="img/illustration-21.svg" alt="">
+            <img src="img/illustration-21.svg" class="menu-img"  alt="Телефон">
             <h2>
              ПРИЛОЖЕНИЯ
             </h2>
             <p>
                 Покорите топ-10 приложений в AppStore и Google Play
             </p>
-            <button>
-                ЗАКАЗАТЬ
-            </button>
+            <a href="#" class="button-order two">
+             ЗАКАЗАТЬ
+            </a>
            </li>
            <li>
-            <img src="img/illustration-31.svg" alt="">
+            <img src="img/illustration-31.svg" class="menu-img" alt="Презентация">
             <h2>
              ПРЕЗЕНТАЦИИ
             </h2>
             <p>
                 Вы даже не подозреваете, насколько вы изумительны!
             </p>
-            <button>
+            <a href="#" class="button-order three">
                 ЗАКАЗАТЬ
-            </button>
+            </a>
            </li>
           </ul>
          </section>
-         <section>
-          <h2>
+         <section class="nerds-about">
+          <h2 class="h2-about">
             Мы — маленькая, но гордая дизайн-студия из Краснодара.
           </h2>
-          <p>
-            Исповедуем принципы минимализма и чистоты. Ставим математический расчет 
+          <p class="p-adventages">
+            Исповедуем принципы минимализма и чистоты. Ставим математический расчет
             превыше креатива. Работаем не покладая рук, как роботы.
           </p>
-          <h3>
+          <h3 >
             Выполняем заказы на разработку:
           </h3>
-          <ul>
+          <ul class="menu-adventages menu">
            <li>
             Веб-сайтов любой сложности
            </li>
@@ -97,67 +102,67 @@
             Слайдшоу и видео для корпоративных презентаций
            </li>
           </ul>
+          </section>
           <div>
-           <img src="img/nerds-illustration1.png" alt="">
+           <img src="img/nerdsillustration1.png" alt="Логотип">
            <h3>
             с 2004 года Любим точность во всем:
            </h3>
-           <p>
-             146%
-                Уровень самоотдачи   
-             100%
-                Соблюдение сроков
-             50%
-                Минимальна предоплата
-          </p>   
+           <dl>
+             <dt> 146% </dt>
+             <dd> Уровень самоотдачи </dd>
+             <dt> 100% </dt>
+             <dd> Соблюдение сроков</dd>
+             <dt> 50% </dt>
+             <dd> Минимальна предоплата </dd>
+           </dl>
           </div>
-         </section>
          <section>
-          <ul>
-            <li> <a href=""> <img src="img/Group5.png" alt=""> </a> </li> 
-            <li> <a href="">  <img src="img/logo-21.svg" alt=""> </a> </li> 
-            <li> <a href=""> <img src="img/logo-31.png" alt=""> </a> </li> 
-            <li> <a href=""> <img src="img/logo-41.png" alt=""> </a> </li> 
+          <ul class="sites menu">
+            <li> <a href=""> <img src="img/Group5.svg" alt="Логотип сайта"> </a> </li>
+            <li> <a href="">  <img src="img/logo-22.svg" alt="Логотип сайта"> </a> </li>
+            <li> <a href=""> <img src="img/logo-32.svg" alt="Логотип сайта"> </a> </li>
+            <li> <a href=""> <img src="img/logo-42.svg" alt="Логотип сайта"> </a> </li>
           </ul>
          </section>
          </main>
          <footer>
-          <img src="img/map1.png" alt="">
+          <img src="img/map.jpg" alt="Карта">
           <div>
            <h2>
             NЁRDS DESIGN STUDIO
            </h2>
-           <p>
-            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  тел. +7 (812) 275-75-75
+           <p class="contact">
+            191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  тел. <a class="contact" href="#">+7 (812) 275-75-75</a>
            </p>
            <button>
                НАПИШИТЕ НАМ
            </button>
           </div>
           <div>
-              <img src="img/map-marker1.png" alt="">
+              <img src="img/map-marker.svg" alt="Маркер">
           </div>
-         <ul>
-           <li> <a href=""> <img src="img/Shape2copy3.png" alt=""> </a> </li>
-           <li> <a href=""> <img src="img/Shape2copy4.png" alt=""> </a> </li>
-           <li> <a href=""> <img src="img/Shapecopy5.png" alt=""> </a> </li>
+         <ul class="social-networks menu">
+           <li> <a href=""> <img src="img/vk.svg" alt="VK"> </a> </li>
+           <li> <a href=""> <img src="img/facebook.svg" alt="FACEBOOK"> </a> </li>
+           <li> <a href=""> <img src="img/instagram.svg" alt="INSTAGRAM"> </a> </li>
          </ul>
-         <h1>
+         <h3>
             Давайте дружить, это выгодно!
-         </h1>
+         </h3>
          <p>
             Скидка 10% для друзей из социальных сетей.
          </p>
         </footer>
         <section>
           <h1> Напишите нам </h1>
-          <form action="">
+          <form class="form" action="#">
             <label for="Name"> Имя </label>
-            <input id="Name" type="Name" placeholder="Имя">
+            <input id="Name" type="text" placeholder="Имя">
             <label for="Email"> Email </label>
             <input id="Email" type="email" placeholder="Email">
             <label for="Text"> В свободной форме </label>
-            <input id="Text" type="text" placeholder="В свободной форме">
+            <input id="Text" placeholder="В свободной форме">
           </form>
           <button> Закрыть </button>
           <button> Отправить </button>
