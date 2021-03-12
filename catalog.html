@@ -3,45 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>Каталог</title>
 </head>
 <body>
-    <header>
-        <a href="">
-            <img src="img/nerds-logo.svg" alt="Логотип">
-           </a>
-           <nav>
-          <ul>
-           <li><a href=""> Студия </a></li>
-           <li><a href=""> Клиенты </a></li>
-           <li><a href=""> Магазин </a></li>
-           <li><a href=""> Контакты </a></li>
-          </ul>
-           </nav>
-           <a href="">
-            <img src="img/cart-icon.svg" alt="Корзина">
-            Корзина
-           </a>
-    </header>
+  <header class="header">
+
+    <a href="" class="nav-logo">
+      <img src="img/nerds-logo.svg" alt="Логотип">
+     </a>
+
+       <nav class="nav">
+      <ul class="nav-menu menu">
+       <li><a href="" class="nav-menu"> Студия </a></li>
+       <li><a href="" class="nav-menu"> Клиенты </a></li>
+       <li><a href="" class="nav-menu"> Магазин </a></li>
+       <li><a href="" class="nav-menu"> Контакты </a></li>
+      </ul>
+       </nav>
+       <a href="" class="nav-menu menu">
+        <img src="img/cart-icon.svg" alt="Корзина">
+        КОРЗИНА
+       </a>
+      </header>
     <main>
-     <h2>
+     <h2 class="main-shop">
          Магазин готовых шаблонов
      </h2>
      <section>
          <h3>Фильтр</h3>
-         Стоимость:
+        <h4> Стоимость:</h4>
          <form action="checkbox">
              <fieldset>
-                 <legend>Сетка</legend>
-                 <ul>
-                     <li><input checked id="filtr-adaptive" type="radio" name="product-group"><label for="filtr-adaptive">Адаптиваня</label></li>
+                 <legend class="uppecase legend">Сетка</legend>
+                 <ul class="menu">
+                     <li><input class="legend" checked id="filtr-adaptive" type="radio" name="product-group"><label for="filtr-adaptive">Адаптиваня</label></li>
                      <li><input id="filtr-fixed" type="radio" name="product-group"><label for="filtr-fixed">Фиксированная</label></li>
                      <li><input id="filtr-rezi" type="radio" name="product-group"><label for="filtr-rezi">Резиновая</label></li>
                  </ul>
              </fieldset>
              <fieldset>
-                 <legend>Особенности</legend>
-                 <ul>
+                 <legend class="uppecase">Особенности</legend>
+                 <ul class="menu">
                      <li><input checked id="filtr-slider" type="checkbox"><label for="filtr-slider">Слайдер</label></li>
                      <li><input id="filtr-block" type="checkbox"><label for="filtr-block">Блок преимущиств</label></li>
                      <li><input checked id="filtr-news" type="checkbox"><label for="filtr-news">Новости</label></li>
@@ -50,72 +53,127 @@
                  </ul>
              </fieldset>
          </form>
-         <button>
-             Показать
+         <button class="uppercase show">
+             показать
          </button>
      </section>
-     <section>
-         Сортировать:
-         <ul>
-             <li>По цене</li>
-             <li>По типу</li>
-             <li>По названию</li>
+     <section class="sites-presents">
+         <h3 class="uppercase">Сортировать:</h3>
+         <ul class="menu main-shop-menu">
+            <a href="#"> <li class="uppercase">По цене</li> </a>
+            <a href="#"> <li class="uppercase">По типу</li> </a>
+            <a href="#"> <li class="uppercase">По названию</li></a>
          </ul>
-         <img src="img/Shape.png" alt="Стрелочка">
+         <a class="arrow" href=""> <img  src="img/Shape.png" alt="Стрелочка"> </a>
          <img src="img/Shape2.png" alt="Стрелочка">
-         <ul>
+         <div class="conteiner-shop">
+         <ul class="menu">
              <li>
                  <img src="img/img-sedona1.png" alt="Сайт">
-                 <h2>SEDONA</h2>
+            <div class="cart-shop">
+              <div class="wrapper">
+                 <h3>SEDONA</h3>
                  <p>
                      Информационный сайт для туристов
                  </p>
-                 <button>
+                 <button class="site-button">
                      9 900 Р
                  </button>
+                </div>
+              </div>
             </li>
-             <li><img src="img/img-pink1.png" alt="Сайт"></li>
-             <li><img src="img/img-barbershop1.png" alt="Сайт"></li>
-             <li><img src="img/img-mishka1.png" alt="Сайт"></li>
-             <li><img src="img/img-aplus1.png" alt="Сайт"></li>
-             <li><img src="img/img-kvast1.png" alt="Сайт"></li>
+          </div>
+             <li>
+               <img src="img/img-pink1.png" alt="Сайт">
+
+               <h2>SEDONA</h2>
+                 <p>
+                     Информационный сайт для туристов
+                 </p>
+                 <button class="site-button">
+                     9 900 Р
+                 </button>
+                </li>
+
+             <li>
+               <img src="img/img-barbershop1.png" alt="Сайт">
+               <h2>SEDONA</h2>
+                 <p>
+                     Информационный сайт для туристов
+                 </p>
+                 <button class="site-button">
+                     9 900 Р
+                 </button>
+             </li>
+             <li>
+               <img src="img/img-mishka1.png" alt="Сайт">
+               <h2>SEDONA</h2>
+                 <p>
+                     Информационный сайт для туристов
+                 </p>
+                 <button class="site-button">
+                     9 900 Р
+                 </button>
+             </li>
+             <li>
+               <img src="img/img-aplus1.png" alt="Сайт">
+               <h2>SEDONA</h2>
+                 <p>
+                     Информационный сайт для туристов
+                 </p>
+                 <button class="site-button">
+                     9 900 Р
+                 </button>
+             </li>
+             <li>
+               <img src="img/img-kvast1.png" alt="Сайт">
+               <h2>SEDONA</h2>
+                 <p>
+                     Информационный сайт для туристов
+                 </p>
+                 <button class="site-button">
+                     9 900 Р
+                 </button>
+             </li>
          </ul>
-         <ul>
-             <li><a>1</a></li>
-             <li><a href="#">2</a></li>
-             <li><a href="#">3</a></li>
-             <li><a href="#">Следующая</a></li>
+         <ul class="menu">
+             <li class="slider"><a href="#">1</a></li>
+             <li class="slider"><a href="#">2</a></li>
+             <li class="slider"><a href="#">3</a></li>
+             <li class="slider slider-next"><a href="#">Следующая</a></li>
          </ul>
      </section>
     </main>
     <footer>
-        <img src="img/map1.png" alt="Карта">
-        <div>
-         <h2>
-          NЁRDS DESIGN STUDIO
-         </h2>
-         <p>
-          191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8  тел. +7 (812) 275-75-75
-         </p>
-         <button>
-             НАПИШИТЕ НАМ
-         </button>
-        </div>
-        <div>
-            <img src="img/map-marker1.png" alt="Маркер">
-        </div>
-       <ul>
-         <li> <a href=""> <img src="img/Shape2copy3.png" alt="VK"> </a> </li>
-         <li> <a href=""> <img src="img/Shape2copy4.png" alt="FACEBOOK"> </a> </li>
-         <li> <a href=""> <img src="img/Shapecopy5.png" alt="INSTAGRAM"> </a> </li>
-       </ul>
-       <h1>
-          Давайте дружить, это выгодно!
-       </h1>
-       <p>
-          Скидка 10% для друзей из социальных сетей.
-       </p>
-      </footer>
+      <div class="conteiner">
+       <img class="map-map" src="img/map.jpg" alt="Карта">
+       <div class="hover">
+         <div class="wrapper-contact">
+        <h3 class="uppercase">
+         NЁRDS DESIGN STUDIO
+        </h3>
+        <p class="contact">
+         191186, Санкт-Петербург, <br> ул. Б. Конюшенная, д. 19/8 <br> <br> тел. <a class="contact" href="#">+7 (812) 275-75-75</a>
+        </p>
+        <button class="write-us uppercase">
+            напишите нам
+        </button>
+       </div>
+     </div>
+         <img class="map-marker" src="img/map-marker.svg" alt="Маркер">
+     </div>
+      <ul class="social-networks menu">
+        <li> <a href=""> <img src="img/vk.svg" alt="VK"> </a> </li>
+        <li> <a href=""> <img src="img/facebook.svg" alt="FACEBOOK"> </a> </li>
+        <li> <a href=""> <img src="img/instagram.svg" alt="INSTAGRAM"> </a> </li>
+      </ul>
+      <h3>
+         Давайте дружить, это выгодно!
+      </h3>
+      <p>
+         Скидка 10% для друзей из социальных сетей.
+      </p>
+     </footer>
       <section>
         <h1> Напишите нам </h1>
         <form action="blank.html">
@@ -131,3 +189,4 @@
       </section>
 </body>
 </html>
+

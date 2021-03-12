@@ -1,9 +1,13 @@
 @font-face{
-  font-family: "Roboto" ;
-  src: url(fonts/roboto.woff2);
+  font-family: "Roboto", "Arial", sans-serif ;
+  src: url(fonts/roboto.woff2),
+  format(woff2),
+  url(fonts/roboto.woff),
+  format(woff);
 }
 body{
-  font-family: "Roboto" ;
+  font-family: "Roboto", "Arial", sans-serif ;
+
 }
 .nav-menu{
   text-decoration: none;
@@ -11,7 +15,20 @@ body{
   font-size: 16px;
   font-weight: bold;
   text-transform: uppercase;
+}
+.nav-menu:hover{
+     color: #FB565A;
+}
+.nav-menu:focus{
+  color: #000000;
+  border-bottom: 2px solid #FB565A;
 
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.nav-menu li{
+  text-transform: uppercase;
 }
 .h3-site{
   font-size: 55px;
@@ -23,11 +40,51 @@ body{
 .shop{
   background-color: #EEEEEE;
 }
-
+.legend{
+  background-image: none;
+}
 .site-button{
   text-decoration: none;
   color: white;
   background-color: #FB565A;
+}
+.conteiner{
+  position: relative;
+}
+.hover{
+   position: absolute;
+   bottom: 0;
+   background: #FFFFFF;
+   height: 308px;
+   width: 319px;
+   bottom: 80px;
+   left: 285px;
+}
+.wrapper-contact{
+  width: 219px;
+  height: 212px;
+  overflow: auto;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+
+.hover button{
+    height: 50px;
+    background-color: #FB565A;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    width: 219px;
+    font-size: 16px;
+
+}
+.map-marker{
+  position: absolute;
+  left: 1093px;
+  top: 170px;
+}
+.map-map{
+  width: 100%;
 }
 .site-button:hover {
      background-color: #E74246;
@@ -35,30 +92,31 @@ body{
 .site-button:focus{
     color: rgb(255, 255, 255, 0.3);
     background-color: #D7373B;
+    border: none;
 }
 .button-order{
   text-decoration: none;
   color: white;
 }
-.one{
+.red-button{
   background-color: #FB565A;
 }
-.two{
+.green-button{
   background-color: #00CA74;
 }
-.two:hover{
+.green-button:hover{
   background-color: #00BC6C;
 }
-.two:focus{
+.green-button:focus{
   background-color: #00AA62;
 }
-.three{
+.yellow-button{
   background-color: #EFC849;
 }
-.three:hover{
+.yellow-button:hover{
   background-color: #EAB534;
 }
-.three:focus{
+.yellow-button:focus{
   background-color: #E5A722;
 }
 .ul-main-menu{
@@ -83,5 +141,59 @@ body{
 .social-networks{
   opacity: 1;
 }
-
+.main-shop{
+  font-size: 55px;
+  margin: 0;
+  background-color: #EEEE;
+}
+.sites-presents a{
+  text-decoration: none;
+  color: black;
+}
+.main-shop-menu{
+  opacity: 0.3;
+}
+.main-shop-menu:focus{
+  opacity: 1;
+}
+.conteiner-shop{
+   position: relative;
+}
+.cart-shop{
+  position: absolute;
+  bottom: 0;
+  background-color: #EEEEEE;
+  width: 360px;
+  height: 231px;
+  display: none;
+}
+.wrapper{
+  width: 200px;
+  height: 151px;
+  overflow: auto;
+  margin: auto;
+  top: 0; left: 0; bottom: 0; right: 0;
+}
+.conteiner-shop:hover .cart-shop{
+       display: block;
+}
+.show{
+  background-color: #EEEEEE;
+  color: #000000;
+  border: none;
+  width: 260px;
+  height: 50px;
+  font-weight: 500;
+  font-size: 16px;
+}
+.slider{
+  background-color: #EEEEEE;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+}
+.slider-next{
+   width: 260px;
+   height: 50px;
+}
 
